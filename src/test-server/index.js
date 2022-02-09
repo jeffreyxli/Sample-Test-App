@@ -76,10 +76,6 @@ app.use('/graphql', graphqlHTTP({
     context
 }));
 
-app.listen(4000, () => {
-    console.log("Listening on port 4000");
-});
-
 app.use('/', (req, res) => {
     res.send("Root Endpoint");
 });

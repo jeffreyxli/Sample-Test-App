@@ -29,10 +29,10 @@
   "scripts": {
     "start": "npm-run-all --parallel watch:server start:web",
     "start:web": "react-scripts start",
-    "start:server": "node src/test-server",
-    "watch:server": "nodemon --watch src/test-server src/test-server",
+    "start:server": "node src/test-server/server.js",
+    "watch:server": "nodemon --watch src/test-server/server.js src/test-server/server.js",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
