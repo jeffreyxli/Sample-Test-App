@@ -7,11 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: update-npm
-          command: "sudo npm install -g npm@5"
-      - run:
           name: install-packages
-          command: npm install
+          command: yarn install
       - run:
           name: test
-          command: npm run test
+          command: yarn test
